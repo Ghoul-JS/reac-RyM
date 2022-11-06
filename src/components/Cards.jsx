@@ -6,9 +6,9 @@ export default function Cards(props) {
    const { characters, onClose } = props;
    return(
       <div className={style.card}>
-         {characters.map((elem,id)=> <Card 
-            key={id}
-            id={id}
+         {characters.map((elem)=> <Card 
+            key={elem.id}
+            id={elem.id}
             onClose={() => onClose(elem.id)}
             name={elem.name}
             species={elem.species}

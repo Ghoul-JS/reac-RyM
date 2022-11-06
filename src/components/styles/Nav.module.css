@@ -1,4 +1,30 @@
 .containerNav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+
+}
+
+.linksNav {
+    display: flex;
+    width: 75%;
+    border-radius: 2px;
+    padding: 1rem;
+    background-color: #e89ac7;
+    border: 3px solid black;
+    margin-left: 5px;
+    margin-bottom: auto;
+
+    /* background-color: #e89ac7;
+    border: 3px solid black; */
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+a {
+    text-decoration: none;
 }

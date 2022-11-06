@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 3rem;
+    /* border: 6px solid rgb(46, 92, 0); */
+}
+
+.details{
+   border: 4px solid black;
+   border-radius: 10px;
+}
+
+.detailsTxt{
+    background-color: rgb(115, 226, 226);
+    display: flex;
+    flex-direction: column;
+    height: 304px;
+    border: 4px solid black;
+    border-radius: 10px;
+    padding-right: 1em;
+    padding-left: 1em;;
+    text-align: left;
+ }
