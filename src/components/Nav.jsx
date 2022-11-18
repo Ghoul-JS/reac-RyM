@@ -13,6 +13,9 @@ export default function Nav(props){
                 <div className={style.link}>
                     <Link to="/about">About</Link>
                 </div>
+                <div className={style.link}>
+                    <Link to="/favorites">My Favorites</Link>
+                </div>
             </div>
             
             <div>

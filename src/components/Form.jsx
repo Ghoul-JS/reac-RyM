@@ -35,8 +35,11 @@ export default function Form(props) {
     }
 
     return(
-        <div className={style.loginPage}>
+        <>
+        <img className={style.nebula} src={`https://www.vippng.com/png/full/41-417258_rick-and-morty-portal-rick-and-morty-style.png`} alt="" />
+            <div className={style.loginPage}>
             <div className={style.form}>
+            <img className={style.formLogo} src={`https://www.pngplay.com/wp-content/uploads/14/Rick-And-Morty-Logo-Transparent-File.png`} alt="" />
                 <form className={style.loginForm} onSubmit={handleSubmit}>
                     <input 
                     className={errors.username && style.warning}
@@ -49,7 +52,7 @@ export default function Form(props) {
 
                     <input
                     className={errors.password && style.warning}
-                    type="text" 
+                    type="password" 
                     placeholder="password" 
                     name="password" 
                     value={userData.password} 
@@ -59,5 +62,7 @@ export default function Form(props) {
                 </form>
             </div>
         </div>
+        </>
+        
     )
 }

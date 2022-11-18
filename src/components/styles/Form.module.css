@@ -10,10 +10,11 @@
   z-index: 1;
   background: #FFFFFF;
   max-width: 360px;
-  margin: 0 auto 100px;
   padding: 45px;
   text-align: center;
   border: 3px solid black;
+  margin-top: 4rem;
+  z-index: 0;
 }
 .form input {
   font-family: "Roboto", sans-serif;
@@ -59,3 +60,20 @@
     color: red;
     margin-left: 10em;
 }
+
+.formLogo {
+  position:absolute;
+  top:-135px;
+  left:-70px;
+  width: 150%;
+  z-index: 1;
+}
+
+.nebula {
+  position:fixed;
+  top:-400px;
+  left:0px;
+  width: auto;
+  /* z-index: 1; */
+}
+

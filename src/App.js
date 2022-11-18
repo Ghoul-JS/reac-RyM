@@ -5,7 +5,8 @@ import Nav from './components/Nav.jsx'
 import Cards from './components/Cards.jsx'
 import About from './components/About.jsx'
 import Detail from './components/Detail.jsx'
-import { Routes, Route, useNavigate } from "react-router-dom"
+import Favorites from './components/Favorites.jsx'
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom"
 
 function App () {
 
@@ -13,6 +14,7 @@ function App () {
   const [access, setAccess] = useState(false)
 
   const navigate = useNavigate();
+  const location = useLocation();
 
   const username = 'ejemplo@gmail.com';
   const password = '1password';
@@ -48,9 +50,10 @@ function App () {
   
   return (
       <div className='App' style={{ padding: '25px' }}>
-        <Nav onSearch={onSearch}/>
+        {location.pathname === "/" ? null : <Nav onSearch={onSearch}/>}
         <Routes>
             <Route path="/" element={<Form login={login}/>} />
+            <Route path="/favorites" element={<Favorites />} />
             <Route path="/home" element={<Cards onClose={onClose} characters={characters} />} />  
             <Route path="/about" element={<About />} />
             <Route path='/detail/:detailId' element={<Detail />} />

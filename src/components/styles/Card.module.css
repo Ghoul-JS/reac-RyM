@@ -1,18 +1,29 @@
 .border {
     border: 4px solid;
     border-radius: 10px;
-    background-color: rgb(115, 226, 226);
+    background-color: rgb(0, 251, 251);
     padding-bottom: 15px;
     margin-bottom: 2rem;
+    text-align: center;
+    width: min-content;
+
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+}
+
+.border:hover{
+    --escala: 1.2;
+    cursor:pointer;
 }
 
 .btn { 
     display: flex;
     margin-top: 3px;
-    margin-left: 3px;
-    border: 2px solid;
-    border-radius: 15px;
+    margin-right: 3px;
+    /* border: 2px solid; */
+    border-radius: 70px;
     padding: 2%;
+    z-index: 1;
 }
 
 .btn:hover {
@@ -20,10 +31,34 @@
 }
 
 .txt {
-    display: flex; 
-    margin-left: 3px;
+    /* margin-left: 3px; */
+    color: rgb(11, 5, 114);
+    margin: auto;
+    white-space: normal;
 }
 
+.btnFav { 
+    display: flex;
+    margin-top: 3px;
+    margin-left: 3px;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 2%;
+    z-index: 1;
+}
 
+.btnFav:hover {
+    background-color: rgb(216, 15, 15);
+}
 
+.mainBtn {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
 
+.imgCard {
+    position: relative;
+    top: -36px;
+    z-index: 0;
+}
