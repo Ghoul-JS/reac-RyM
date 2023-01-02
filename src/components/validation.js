@@ -2,7 +2,7 @@ export default function validation(userData){
     const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
     const regexNum = /\d/;
     const errors={}
-
+    
     if (!regexEmail.test(userData.username))errors.username = 'No es un correo válido'; 
            
     if (!userData.username) errors.username = 'Se requiere un correo';

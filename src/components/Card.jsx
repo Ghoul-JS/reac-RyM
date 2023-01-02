@@ -44,7 +44,6 @@ function Card(props) {
             <img className={style.imgCard} src={props.image} alt="imagen" />
             <h2 className={style.txt}>{props.name}</h2>
             <h2 className={style.txt}>{props.species}</h2>
-            {/* <h2 className={style.txt}>{props.gender}</h2> */}
          </Link>
       </div>
    );

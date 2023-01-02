@@ -13,7 +13,7 @@
     border: 2px solid;
     border-radius: 15px;
     padding: 1rem;
-    background-color: #44281d;
+    background-color: rgb(34, 134, 19);
     color: white;
     border: 3px solid black;
     margin-left: 5px;
@@ -21,5 +21,5 @@
 }
 
 .btnAdd:hover {
-    background-color: rgb(34, 134, 19);
+    background-color: #44281d;
 }

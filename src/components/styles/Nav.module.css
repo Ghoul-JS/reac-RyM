@@ -25,7 +25,7 @@
     margin-right: 1rem;
     border: 2px solid black;
     border-radius: 12px;
-    background: slateblue;
+    background: rgb(51, 40, 167);
     padding: 2px;
 }
 
@@ -35,5 +35,6 @@ a {
 }
 
 .link:hover {
-    background: rgb(134, 132, 132);
+    background: slateblue;
+    cursor:pointer
 }
